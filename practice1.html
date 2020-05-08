@@ -1,135 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+<title>Hello World</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<style>
-    *{
-        margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    header{
-        height: 300px;
-        background-image: linear-gradient(to bottom right, rgb(79, 135, 255), rgb(81, 250, 109));
-        color: rgb(228, 228, 228);
-        text-align: center;
-        
-        
-        
-    }
-    .mycontainer{
-        height: 200px;
-        
-        
-    }
-    .mycontainer h1{
-        position: relative;
-        top: 60%;
-    }
-    section{
-        display: flex;
-        
-        overflow: hidden;
-        
-        width: 100%;
-        background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(212, 226, 255));
-        height: auto;
-    }
-    article{
-        width: 70%;
-        margin: 10px;
-        font-size: 20px;
-    }
-    aside{
-        align-items: stretch;
-        
-        height: 100%;
-        float: right;
-        
-        width: 30%;
-        
-        
-    }
-    footer{
-        background-image: linear-gradient(to bottom right, rgb(79, 135, 255), rgb(81, 250, 109));
-        height: 100%;
-        clear: both;
-        color: rgb(255, 255, 255);
-        
-    }
-    .container{
-        padding: 0%;
-        margin: 0px;
-        width: 100%;
-        height: 100%;
-    }
-    footer a,li{
-        
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        
-    }
 
-    .footer2 {
-      
-        padding: 0px;
-      margin: 0px;
-    }
-    .articleimg2{
-        margin-top: 10px;
-        width: 270px;
-        height: 270px;
-    }
-
-    .articleimg{
-        
-        width: 100%;
-    }
-    li{
-        
-        line-height: 50px;
-        
-    }
-    aside a{
-        text-decoration: none;
-        color: rgb(26, 26, 26);
-        font-size: 20px;
-    }
-    form {
-  
-  font-family: Arial;
-  margin-top: 10px;;
-}
-    input{
-        width: 100%;
-        display: inline-block;
-        
-  
-  height: 50px;
-  margin-top:20px;
-  padding: 10px;
-  border-radius: 50px;
-  box-shadow: none;
-  border: none;
-    }
-    .footer1 {
-      
-        padding: 0px;
-      margin: 0px;
-    }
-    .footernav{
-        font-size: 20px;
-        text-decoration: none;
-    }
-    .footernav li{
-        
-        list-style-type: none;
-        
-    }
-</style>
 <body>
     <header>
    <div class="mycontainer">     
@@ -137,18 +15,218 @@
 </header>
 <section>
     <article>
-    <br>
-    <h1>This is An Article</h1>
-    <br>
-    <img class="articleimg" src="e38063bb9dfbbf24b06e1c622e2ba989.png">
-    <br>
-    <br>
-    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-    <br> <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-    <br> <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      <h2 class="heading">This is JavaScript Practice Work</h2>
+      <!-- **********************************************************
+        ******************pop Starts******************************************************************************** -->
+        <div class="post">
+          <h3 class="subtitile">Pop(): Removes an item from the end of an array</h3>
+          <p id="JavaScripDemo1" class="example"></p>
+          <pre class="examplecode">var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("JavaScripDemo1").innerHTML = "["+fruits+"]";
+            function myFunction1(){
+                                    fruits.pop();
+                                    document.getElementById("JavaScripDemo1").innerHTML ="["+fruits+"]";
+                                  }</pre>
+          <input class="globalbutton" type="button" value="POP It" onclick="myFunction1()" > 
+          <input class="globalbutton" type="button" value="RESET It" onclick="myFunctionreset()" > 
+          
+          
+          <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("JavaScripDemo1").innerHTML = "["+fruits+"]";
+            
+            function myFunction1(){
+              fruits.pop();
+              document.getElementById("JavaScripDemo1").innerHTML ="["+fruits+"]";
+            }
+            function myFunctionreset(){
+              
+              var temp = ["Banana", "Orange", "Apple", "Mango"];
+              fruits = temp
+            document.getElementById("JavaScripDemo1").innerHTML = "["+fruits+"]";
+            
+            }
+          
+          </script>
+        </div>
+  <!-- *********************************************************************************pop Ends***************************************************************************   -->
+  <!-- ************************************************************************************push Starts*********************************************************************** -->
+  <div class="post">
+  <h3 class="subtitile">Push(): Adds an item to the end of an array</h3>
+  <p id="JavaScripDemo2" class="example"></p>
+  <pre class="examplecode">var fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo2").innerHTML = "["+fruits2+"]";
+    function myFunction2(){
+                            fruits2.push("Kiwi");
+                            document.getElementById("JavaScripDemo2").innerHTML ="["+fruits2+"]";
+                          }</pre>
+  <input class="globalbutton" type="button" value="PUSH It" onclick="myFunction2()" > 
+  <input class="globalbutton" type="button" value="RESET It" onclick="myFunctionreset2()" > 
+  
+  
+  <script>
+    var fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo2").innerHTML = "["+fruits2+"]";
+    
+    function myFunction2(){
+      fruits2.push("Kiwi");
+      document.getElementById("JavaScripDemo2").innerHTML ="["+fruits2+"]";
+    }
+    function myFunctionreset2(){
+        var temp = ["Banana", "Orange", "Apple", "Mango"];
+        fruits2 = temp
+      document.getElementById("JavaScripDemo2").innerHTML = "["+fruits2+"]";
+      
+      }
+  </script>
+  </div>
+  <!-- ***************************************************************************************push ends************************************************************************ -->
+<!-- ***************************************************************************************Shift start************************************************************************ -->
+<div class="post">
+  <h3 class="subtitile">Shift(): Remove an item from the Beginning of an array</h3>
+  <p id="JavaScripDemo3" class="example"></p>
+  <pre class="examplecode">var fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo3").innerHTML = "["+fruits3+"]";
+    function myFunction3(){
+                            fruits3.shift();
+                            document.getElementById("JavaScripDemo3").innerHTML ="["+fruits3+"]";
+                          }</pre>
+  <input class="globalbutton" type="button" value="SHIFT It" onclick="myFunction3()" > 
+  <input class="globalbutton" type="button" value="RESET It" onclick="myFunctionreset3()" > 
+  
+  
+  <script>
+    var fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo3").innerHTML = "["+fruits3+"]";
+    
+    function myFunction3(){
+      fruits3.shift();
+      document.getElementById("JavaScripDemo3").innerHTML ="["+fruits3+"]";
+    }
+    function myFunctionreset3(){
+        var temp = ["Banana", "Orange", "Apple", "Mango"];
+        fruits3 = temp
+      document.getElementById("JavaScripDemo3").innerHTML = "["+fruits3+"]";
+      
+      }
+  </script>
+  </div>
+<!-- ***************************************************************************************Shift ends************************************************************************ -->
+<!-- ***************************************************************************************UnShift start************************************************************************ -->
+<div class="post">
+  <h3 class="subtitile">UnShift(): Adds an item to the Beginning of an array</h3>
+  <p id="JavaScripDemo4" class="example"></p>
+  <pre class="examplecode">var fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo4").innerHTML = "["+fruits4+"]";
+    function myFunction4(){
+                            fruits4.unshift("Kiwi");
+                            document.getElementById("JavaScripDemo4").innerHTML ="["+fruits4+"]";
+                          }</pre>
+  <input class="globalbutton" type="button" value="UNSHIFT It" onclick="myFunction4()" > 
+  <input class="globalbutton" type="button" value="RESET It" onclick="myFunctionreset4()" > 
+  
+  
+  <script>
+    var fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo4").innerHTML = "["+fruits4+"]";
+    
+    function myFunction4(){
+      fruits4.unshift("Kiwi");
+      document.getElementById("JavaScripDemo4").innerHTML ="["+fruits4+"]";
+    }
+    function myFunctionreset4(){
+        var temp = ["Banana", "Orange", "Apple", "Mango"];
+        fruits4 = temp
+      document.getElementById("JavaScripDemo4").innerHTML = "["+fruits4+"]";
+      
+      }
+  </script>
+  </div>
+<!-- ***************************************************************************************UnShift ends************************************************************************ -->
+<!-- ***************************************************************************************Splice/Unsplice start************************************************************************ -->
+<div class="post">
+  <h3 class="subtitile">Splice(): Adds/Removes an item from an array</h3>
+  <p id="JavaScripDemo5" class="example"></p>
+  <pre class="examplecode">var fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo5").innerHTML = "["+fruits5+"]";
+    function myFunction5(){
+                            fruits5.splice(2,0,"Kiwi");
+                            document.getElementById("JavaScripDemo5").innerHTML ="["+fruits5+"]";
+                          }</pre>
+  <input class="globalbutton" type="button" value="SPLICE It" onclick="myFunction5()" > 
+  <input class="globalbutton" type="button" value="UNSPLICE It" onclick="myFunction5unsplice()" > 
+  <input class="globalbutton" type="button" value="RESET It" onclick="myFunctionreset5()" > 
+  
+  <script>
+    var fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("JavaScripDemo5").innerHTML = "["+fruits5+"]";
+    
+    function myFunction5(){
+      fruits5.splice(2,0,"Kiwi");
+      document.getElementById("JavaScripDemo5").innerHTML ="["+fruits5+"]";
+    }
+    function myFunction5unsplice(){
+      fruits5.splice(2,1);
+      document.getElementById("JavaScripDemo5").innerHTML ="["+fruits5+"]";
+    }
+    function myFunctionreset5(){
+        var temp = ["Banana", "Orange", "Apple", "Mango"];
+        fruits5 = temp
+      document.getElementById("JavaScripDemo5").innerHTML = "["+fruits5+"]";
+      
+      }
+  </script>
+  </div>
+<!-- ***************************************************************************************Splice/Unsplice ends************************************************************************ -->
+<!-- ***************************************************************************************Spread start************************************************************************ -->
+<div class="post">
+  <h3 class="subtitile">Spread operator allows an iterable to expand in places where 0+ arguments are expected.</h3>
+    <p> It is mostly used in variable array where there is more than 1 values are expected.It allows us the privilege to obtain a list of parameters from an array. Syntax of Spread operator is same as Rest parameter but it works completely opposite of it.</p>
+  <p id="JavaScripDemo6" class="example"></p>
+  <p id="JavaScripDemo7" class="example"></p>
+  <h3 class="subtitile">OutPut</h3>
+  <p id="JavaScripDemo8" class="example"></p>
+  <pre class="examplecode">let fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+    let fruits7 = ["Kiwi", "Grapes"];
+    let fruits8 = "Output Will be Displayed here";
+    document.getElementById("JavaScripDemo6").innerHTML = "["+fruits6+"]";
+    document.getElementById("JavaScripDemo7").innerHTML = "["+fruits7+"]";
+    document.getElementById("JavaScripDemo8").innerHTML = fruits8;
+
+    function myFunction6spread(){
+                                    temp = [...fruits6,...fruits7];
+                                    document.getElementById("JavaScripDemo8").innerHTML ="["+temp+"]";
+                                  }
+    function myFunctionreset6(){
+                                    let fruits8 = "Output Will be Displayed here";
+                                    document.getElementById("JavaScripDemo8").innerHTML = "["+fruits8+"]";
+                                }</pre>
+  <input class="globalbutton" type="button" value="SPREAD It" onclick="myFunction6spread()" > 
+  <input class="globalbutton" type="button" value="RESET It" onclick="myFunctionreset6()" > 
+  
+  <script>
+    let fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+    let fruits7 = ["Kiwi", "Grapes"];
+    let fruits8 = "Output Will be Displayed here";
+    document.getElementById("JavaScripDemo6").innerHTML = "["+fruits6+"]";
+    document.getElementById("JavaScripDemo7").innerHTML = "["+fruits7+"]";
+    document.getElementById("JavaScripDemo8").innerHTML = fruits8;
+
+    function myFunction6spread(){
+                                    temp = [...fruits6,...fruits7];
+                                    document.getElementById("JavaScripDemo8").innerHTML ="["+temp+"]";
+                                  }
+    function myFunctionreset6(){
+                                    let fruits8 = "Output Will be Displayed here";
+                                    document.getElementById("JavaScripDemo8").innerHTML = "["+fruits8+"]";
+                                }
+  </script>
+  </div>
+<!-- ***************************************************************************************Spread ends************************************************************************ -->
+
 </article>
     <aside>
-        <nav>
+        <nav class="asidenav">
             <ul>
               <h1>Navigation</h1>  
               <li><a href="#">Home</a></li>
@@ -178,34 +256,34 @@
               <h1>Gallery</h1>
             <img class="articleimg2" src="e38063bb9dfbbf24b06e1c622e2ba989.png">
             <img class="articleimg2" src="e38063bb9dfbbf24b06e1c622e2ba989.png">
-            <div class="container">
-                <input type="#" value="Watch More" style="background-color: rgb(40, 158, 40); text-align:center;width: 220px;"> 
+            <input class="globalbutton" type="submit" value="Watch More" > 
               </div>
-        </div>
-          <div class="col-sm-4 footer3">
-            <form action="">
-                <div class="container">
-                  <h2>Subscribe to our Newsletter</h2>
-                 
-                </div>
-              
-                <div class="container" >
-                  <input type="text" placeholder="Name" name="name" required>
-                  <br>
-                  <input type="text" placeholder="Email address" name="mail" required>
-                  <br>
-                  <br>
-                  <label>
-                    Daily Newsletter
-                    <input type="checkbox" checked="checked" name="subscribe" style="height: 25px;"> 
-                  </label>
-                </div>
-              
-                <div class="container">
-                  <input type="submit" value="Subscribe" style="background-color: rgb(40, 158, 40); width: 220px;"> 
-                </div>
-              </form>
-          </div>
+              <div class="col-sm-4 footer3">
+                <form action="">
+                    <div class="container">
+                      <h2>Subscribe to our Newsletter</h2>
+                     
+                    </div>
+                  
+                    <div class="container" >
+                      <input type="text" placeholder="Name" name="name" required>
+                      <br>
+                      <input type="text" placeholder="Email address" name="mail" required>
+                      <br>
+                      <br>
+                      <label>
+                        Daily Newsletter
+                        <input type="checkbox" checked="checked" name="subscribe" style="height: 25px;"> 
+                      </label>
+                    </div>
+                  
+                    <div class="container">
+                      <input class="globalbutton" type="submit" value="Subscribe" > 
+                    </div>
+                  </form>
+              </div>
+            </div>
+          
         </div>
       </div>
       <br><br>

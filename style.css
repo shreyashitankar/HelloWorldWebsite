@@ -157,7 +157,7 @@ border: none;
     overflow-x: auto;
 }
 .globalbutton{
-    background-color:rgba(255,0,146,1); width: 220px;
+    background-color:#eb5c63; width: 220px;
     color: rgb(255, 255, 255);
     font-weight: 800;
     font-size: 20px;

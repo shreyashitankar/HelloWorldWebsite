@@ -1,6 +1,15 @@
 *{
-    margin: 0px;
+    margin: 0 auto;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    margin-top: -22px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: auto;
 }
 textarea:focus, input:focus{
     outline: none;
@@ -33,7 +42,7 @@ section{
     height: auto;
 }
 article{
-    width: 70%;
+    
     margin: 10px;
     font-size: 20px;
 }
@@ -41,14 +50,10 @@ aside{
     align-items: stretch;
     color: white;
     height: 100%;
-    float: right;
-    
-    width: 30%;
-    
-    
 }
+
 .asidenav ul,li{
-    color: rgb(255, 255, 255);
+    
     list-style: none;
 }
 footer{
@@ -68,8 +73,15 @@ footer{
 footer a,li{
     
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 121, 111);
     
+    
+}
+footer a:hover{
+
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 178, 173);
 }
 
 .footer2 {
@@ -97,6 +109,11 @@ aside a{
     color: rgb(255, 121, 111);
     font-size: 20px;
 }
+aside a:hover{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 178, 173);
+}
 form {
 
 font-family: Arial;
@@ -114,6 +131,9 @@ border-radius: 50px;
 box-shadow: none;
 border: none;
 }
+.footerglobal{
+    text-align: center;
+}
 .footer1 {
   
     padding: 0px;
@@ -122,6 +142,7 @@ border: none;
 .footernav{
     font-size: 20px;
     text-decoration: none;
+    
 }
 .footernav li{
     
@@ -171,4 +192,19 @@ border: none;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 20px;
+}
+ul{
+    padding-inline-start: 0px;
+}
+
+@media only screen and (max-width: 768px){
+    .example{
+        width: 100%;
+    }
+    .globalbutton{
+        width: 100%;
+    }
+    aside{
+        display: none;
+    }
 }

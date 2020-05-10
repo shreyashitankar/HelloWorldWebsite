@@ -18,22 +18,167 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-9">
     <article>
-      <h2 class="heading">This is JavaScript Practice Work</h2>
-      <!-- **********************************************************
+      <h2 class="heading"> ES6 Tutorial </h2>
+      <div class="post">
+        <h3 class="subtitle">Let Keyword</h3>
+        <p>The let statement declares a block-scoped local variable, optionally initializing it to a value.</p>
+        <pre class="examplecode"> function myletfunction(){
+          let x = 1;
+          if(x == 1){
+            let x = 2;
+            document.getElementById("ES6let2").innerHTML="x"+"="+x;
+          }
+          document.getElementById("ES6let").innerHTML = "x"+"="+x;
+        }
+        </pre>
+        <h3 class="subtitle">x outside Scope</h3>
+        <p id="ES6let" class="example">x = &ensp;&ensp;</p>
+        <h3 class="subtitle">x inside scope</h3>
+        <p id="ES6let2" class="example">x = &ensp;&ensp;</p>
+        <input class="globalbutton" type="button" value="OutPut" onclick="myletfunction()" > 
+        <script>
+        function myletfunction(){
+                                  let x = 1;
+                                  if(x == 1){
+                                    let x = 2;
+                                    document.getElementById("ES6let2").innerHTML="x"+"="+x;
+                                  }
+                                  document.getElementById("ES6let").innerHTML = "x"+"="+x;
+                                }
+        </script>
 
-<!-- ***************************************************************************************Spread ends************************************************************************ -->
+      </div>
+      <div class="post">
+        <h2 class="subtitle">Const Keyword</h2>
+        <p>Constants are block-scoped, much like variables defined using the let keyword. The value of a constant can't be changed through reassignment, and it can't be redeclared.</p>
+        <pre class="examplecode">const number = 42;
+          try {
+                const number = 99;
+              } catch (err) {
+                              console.log(err);
+                              // expected output: TypeError: invalid assignment to const `number'
+                              // Note - error messages will vary depending on browser
+              }
+            console.log(number);</pre>
+            <h2 class="subtitle">Output Will look like this</h2>
+            <pre class="example">// expected output: 42</pre>
+      </div>
+      <div class="post">
+        <h2 class="subtitle">Rest Parameters</h2>
+        <p>ES6 provides a new kind of parameter so-called rest parameter that has a prefix of three dots (...).  The rest parameter allows you to represent an indefinite number of arguments as an array. See the following <p class=subtitle>code:</p></p>
+        <pre class="examplecode">function sum(...args) {
+            let total = 0;
+            for (const a of args) {
+                total += a;
+            }
+            return total;
+        }
+        
+        sum(1, 2, 3); </pre>
+        <h2 class="subtitle">Output Will look like this</h2>
+        <pre class="example">//output = 6</pre>
+        <p>The rest parameter should be in last</p>
+      </div>
+      <div class="post">
+        <h2 class="subtitle">
+          For __ of __ Loop
+        </h2>
+        <p> ES6 introduced a new construct for ... of that creates a loop iterating over an iterable object such as an array , a map , a set and etc. </p>
+        <h2 class="subtitle">
+          syntax
+        </h2>
+<pre class="examplecode">for (variable of iterable) {
+    // statements 
+}</pre>
+         <h2 class="subtitle">
+           Example
+         </h2>
+         <pre class="examplecode">let scores = [80, 90, 70];
+for (let score of scores) {
+                            score = score + 5;
+                            console.log(score);
+                          }</pre>
+          <h2 class="subtitle">Output Will Look Like This</h2>
+<pre class="example">
+//85
+//95
+/75</pre>
+      </div>
+      <div class="post">
+        <h2 class="subtitle">ES6 map Object</h2>
+        <p>A map objects holds key-value paris where values of any type can be used as either keys or values.</p>
+        <p>A map objects remembers the original insertion order of the keys
+        </p>
+        <pre class="examplecode">let map = new Map([iterable]);
+        </pre>
+        <p class="subtitle">Example Code</p>
+<pre class="examplecode">let john = {name: 'John Doe'},
+lily = {name: 'Lily Bush'},
+peter = {name: 'Peter Drucker'};
+let userRoles = new Map();
+userRoles.set(jhon, 'admin')
+         .set(lily, 'editor')
+         .set(peter, 'subscriber');
+userRoles.get(john);
+</pre>
+<h2 class="subtitle">If you try to Print userRoles You will get this particular output</h2>
+<pre class="examplecode">Map(3) {{…} => "admin", {…} => "editor", {…} => "subscriber"}
+  [[Entries]]
+  0: {Object => "admin"}
+  1: {Object => "editor"}
+  2: {Object => "subscriber"}
+  size: (...)
+</pre>
+<h2 class="subtitle">try to print User Name and its role </h2>
+<pre class="examplecode">
+for(let user of userRoles){
+    console.log(user[0].name);
+    console.log(user);
+}
+</pre>
+<h2 class="subtitle">OutPut Will look like this</h2>
+<pre class="example">
+VM3332:2 John Doe
+VM3332:2 (2) [{…}, "admin"]
+VM3332:2 Lily Bush
+VM3332:2 (2) [{…}, "editor"]
+VM3332:2 Peter Drucker
+VM3332:2 (2) [{…}, "subscriber"]
+</pre>
+<p>In above code we where able to extract name using the keys of userRoles, How lets see</p>
+<pre class="example">
+  console.log(userRoles);
+</pre>
+<h2 class="subtitle">This will generate following Output</h2>
+<pre class="example">Map(3) {{…} => "admin", {…} => "editor", {…} => "subscriber"}
+  [[Entries]]
+  0: {Object => "admin"}
+  key: {name: "John Doe"}
+  value: "admin"
+  1: {Object => "editor"}
+  key: {name: "Lily Bush"}
+  value: "editor"
+  2: {Object => "subscriber"}
+  key: {name: "Peter Drucker"}
+  value: "subscriber"
+  size: (...)
+  __proto__: Map</pre>
+<p> As we can clearly se in key list every 0th element is Name of particulars</p>
+<input class="globalbutton" type="button" value="Map Methods" onclick="window.location.href='mapmethods.html'" > 
+</div>
 
 </article>
 </div>
-<div class="col-sm-2">
+<div class="col-sm-3">
     <aside>
         <nav class="asidenav">
             <ul>
+              <br>
                 <h1>Navigation</h1>  
                 <li><a href="index.html">Home</a></li>
-                <li><a href="javapractice.html">JavaScript Practice 2</a></li>
+                <li><a href="javapractice.html">ES6 Tutorial</a></li>
                 <li><a href="#">Clients</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>Hello World</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+   <div class="mycontainer">     
+<h1><"Hello World"/></h1></div>
+</header>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+    <article>
+        <h2 class="heading">Find And Filter Methods</h2>
+        <div class="post">
+            <h2 class="subtitle">Find Method</h2>
+            <p>Find Method return the first value which is required</p>
+            <pre class="examplecode">const array1 =  [5, 12, 8, 130, 44];
+                const found = array1.find(element => element > 7);
+                console.log(found);
+            </pre>
+            <h2 class="subtitle">Output</h2>
+            <pre class="example">12</pre>
+            <p>Here output is 12 right but it should return 8 or 130 or 44 but its only 12 because 12 has 1st occurence</p>
+        </div>
+        <div class="post">
+            <h2 class="subtitle">FindIndex Method</h2>
+            <pre class="examplecode">const array1 =  [5, 12, 8, 130, 44];
+                const found = array1.findIndex(element => element==12);
+                console.log(found);
+            </pre>
+            <pre class="example">1</pre>
+            <p>This will return index of 1st occurence of the number</p>
+        </div>
+        <div class="post">
+            <h2 class="subtitle">Filter() Method</h2>
+            <p>The filter method creates a new array according to the condition or fucntion provided by the programmer</p>
+            <pre class="examplecode">const words = ['spray','limit', 'elite', 'exuberant', 'destruction', 'present'];
+                let result = words.filter(word => word.length > 6);
+                console.log(result);</pre>
+            <h2 class="subtitle">Output</h2>
+            <pre class="example">["exuberant", "destruction", "present"]</pre>
+        </div>
+
+</article>
+</div>
+<div class="col-sm-3">
+    <aside>
+        <nav class="asidenav">
+            <ul>
+              <br>
+                <h1>Navigation</h1>  
+                <li><a href="index.html">Home</a></li>
+                <li><a href="javapractice.html">ES6 Tutorial</a></li>
+                <li><a href="mapmethods.html">Map methods</a></li>
+                <li><a href="FindandFilter.html">Find and Filter Methods</a></li>
+            </ul>
+          </nav>
+    </aside>
+  </div>
+  </div>
+</div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row footerglobal">
+          <div class="col-sm-4 footer1">
+            <h1>&nbsp&nbspNavigation</h1>
+    <nav class = "footernav" >
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javapractice.html">ES6 Tutorial</a></li>
+            <li><a href="mapmethods.html">Map methods</a></li>
+            <li><a href="FindandFilter.html">Find and Filter Methods</a></li>
+        </ul>
+      </nav>
+          </div>
+          <div class="col-sm-4 footer2">
+              <h1>Gallery</h1>
+            <img class="articleimg2" src="e38063bb9dfbbf24b06e1c622e2ba989.png">
+            <img class="articleimg2" src="e38063bb9dfbbf24b06e1c622e2ba989.png">
+            <input class="globalbutton" type="submit" value="Watch More" > 
+              </div>
+              <div class="col-sm-4 footer3">
+                <form action="">
+                    <div class="container">
+                      <h2>Subscribe to our Newsletter</h2>
+                     
+                    </div>
+                  
+                    <div class="container" >
+                      <input type="text" placeholder="Name" name="name" required>
+                      <br>
+                      <input type="text" placeholder="Email address" name="mail" required>
+                      <br>
+                      <br>
+                      <label>
+                        Daily Newsletter
+                        <input type="checkbox" checked="checked" name="subscribe" style="height: 25px;"> 
+                      </label>
+                    </div>
+                  
+                    <div class="container">
+                      <input class="globalbutton" type="submit" value="Subscribe" > 
+                    </div>
+                  </form>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+      <br><br>
+</footer>
+</body>
+
+</html>

@@ -20,7 +20,131 @@
     <div class="row">
       <div class="col-sm-9">
     <article>
-
+        <h2 class="heading">Map Object Methods</h2>
+        <div class="post">
+            <h2 class="subtitle">Clear()</h2>
+            <p>Deletes All the elements From the map Object</p>
+            <h2 class="subtitle">Syntax</h2>
+            <pre class="examplecode">
+let john = {name: 'John Doe'},
+lily = {name: 'Lily Bush'},
+peter = {name: 'Peter Drucker'};
+let userRoles = new Map();
+userRoles.set(john, 'admin')
+         .set(lily, 'editor')
+         .set(peter, 'subscriber');
+userRoles.get(john);
+userRoles.clear();
+console.log(userRoles.size)</pre>
+            <h2 class="subtitle">Output</h2>
+            <p class="example">0</p>
+        </div>
+        <div class="post">
+            <h2 class="subtitle">delete(key)</h2>
+            <pre class="examplecode">
+let john = {name: 'John Doe'},
+lily = {name: 'Lily Bush'},
+peter = {name: 'Peter Drucker'};
+let userRoles = new Map();
+userRoles.set(john, 'admin')
+         .set(lily, 'editor')
+         .set(peter, 'subscriber');
+userRoles.get(john);
+userRoles.delete(lily);
+console.log(userRoles)
+            </pre>
+            <p>After Deletion output will be like this</p>
+            <pre class="example">Map(2) {{…} => "admin", {…} => "subscriber"}
+[[Entries]]
+0: {Object => "admin"}
+key: {name: "John Doe"}
+value: "admin"
+1: {Object => "subscriber"}
+key: {name: "Peter Drucker"}
+value: "subscriber"</pre>
+        </div>
+        <div class="post">
+            <h2 class="subtitle">has(key)</h2>
+            <pre class="examplecode">let john = {name: 'John Doe'},
+lily = {name: 'Lily Bush'},
+peter = {name: 'Peter Drucker'};
+let userRoles = new Map();
+userRoles.set(john, 'admin')
+            .set(lily, 'editor')
+            .set(peter, 'subscriber');
+userRoles.has(john);</pre>
+            <h2 class="subtitle">Output</h2>
+            <pre class="example">true</pre>
+        </div>
+        <div class="post">
+            <h2 class="subtitle">keys()</h2>
+            <pre class="examplecode">let john = {name: 'John Doe'},
+lily = {name: 'Lily Bush'},
+peter = {name: 'Peter Drucker'};
+let userRoles = new Map();
+userRoles.set(john, 'admin')
+            .set(lily, 'editor')
+            .set(peter, 'subscriber');
+userRoles.key();</pre>
+            <h2 class="subtitle">Output</h2>
+<pre class="example">MapIterator {{…}, {…}}
+[[Entries]]
+0:
+value: {name: "John Doe"}
+1:
+value: {name: "Peter Drucker"}
+__proto__: Map Iterator
+[[IteratorHasMore]]: true
+[[IteratorIndex]]: 0
+[[IteratorKind]]: "keys"</pre>    
+        </div>
+        <div class="post">
+            <h2 class="subtitle">entries()</h2>
+            <p>returns a new Iterator object that contains an array of [key, value] for each element in the map object. The order of objects in the map is the same as the insertion order.</p>
+            <pre class="examplecode">let john = {name: 'John Doe'},
+lily = {name: 'Lily Bush'},
+peter = {name: 'Peter Drucker'};
+let userRoles = new Map();
+userRoles.set(john, 'admin')
+            .set(lily, 'editor')
+            .set(peter, 'subscriber');
+userRoles.entries();</pre>
+            <h2 class="subtitle">Output</h2>
+            <pre class="example">MapIterator {{…} => "admin", {…} => "subscriber"}
+[[Entries]]
+0: {Object => "admin"}
+key: {name: "John Doe"}
+value: "admin"
+1: {Object => "subscriber"}
+key: {name: "Peter Drucker"}
+value: "subscriber"
+__proto__: Map Iterator
+next: ƒ next()
+Symbol(Symbol.toStringTag): "Map Iterator"
+__proto__: Object
+[[IteratorHasMore]]: true
+[[IteratorIndex]]: 0
+[[IteratorKind]]: "entries"</pre>
+        </div>
+        <div class="post">
+            <h2 class="subtitle">forEach()</h2>
+        <p>forEach() method calls a function for each element in the array.</p>
+        <pre class="examplecode">let john = {name: 'John Doe'},
+            lily = {name: 'Lily Bush'},
+            peter = {name: 'Peter Drucker'};
+            let userRoles = new Map();
+            userRoles.set(john, 'admin')
+                        .set(lily, 'editor')
+                        .set(peter, 'subscriber');
+            userRoles.forEach(function(val,index){
+                console.log(val)
+            })
+        </pre>
+        <h2 class="subtitle">Output</h2>
+        <pre class="example">VM504:1 admin
+VM504:1 editor
+VM504:1 subscriber</pre>
+    </div>
 
 </article>
 </div>

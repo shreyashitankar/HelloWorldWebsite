@@ -1,0 +1,64 @@
+<html>
+
+<body>
+    <!-- Event 1 onclick event************************************** -->
+<input type="button" id="btn" value="change color"></input>
+<script>
+    let btn = document.getElementById('btn');
+    
+    function random(number){
+        return Math.floor(Math.random()*(number+1));
+    }
+    
+    btn.onclick = function(){
+        const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+      document.body.style.backgroundColor = rndCol;
+    }
+    </script>
+    <!-- Event 2 add event listner***************************************************-->
+    <button>Change color</button>
+    <script>
+        let btn1 = document.querySelector('button');
+  
+        function random(number) {
+          return Math.floor(Math.random()*number);
+        }
+  
+        function bgChange() {
+          const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+          document.body.style.backgroundColor = rndCol;
+        }
+  
+        btn1.addEventListener('click', bgChange);
+      </script>
+      <!-- Event 3 onsubmit********************************************************** -->
+      <form>
+        <div>
+          <label for="fname">First name: </label>
+          <input id="fname" type="text">
+        </div>
+        <div>
+          <label for="lname">Last name: </label>
+          <input id="lname" type="text">
+        </div>
+        <div>
+           <input id="submit" type="submit">
+        </div>
+      </form>
+      <p></p>
+      <script>
+          let form = document.querySelector('form');
+        let fname = document.getElementById('fname');
+        let lname = document.getElementById('lname');
+        let para = document.querySelector('p');
+
+form.onsubmit = function(e) {
+  if (fname.value === '' || lname.value === '') {
+    e.preventDefault();
+    para.textContent = 'You need to fill in both names!';
+  }
+}
+      </script>
+</body>
+
+</html>

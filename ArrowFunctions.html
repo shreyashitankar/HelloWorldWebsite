@@ -3,7 +3,7 @@
     <head>
 <title>Hello World</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" href="https://6maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -20,53 +20,49 @@
     <div class="row">
       <div class="col-sm-9">
     <article>
-        <h2 class="heading">Find And Filter Methods</h2>
-        <div class="post">
-            <h2 class="subtitle">Find Method</h2>
-            <p>Find Method return the first value which is required</p>
-            <pre class="examplecode">const array1 =  [5, 12, 8, 130, 44];
-                const found = array1.find(element => element > 7);
-                console.log(found);
-            </pre>
-            <h2 class="subtitle">Output</h2>
-            <pre class="example">12</pre>
-            <p>Here output is 12 right but it should return 8 or 130 or 44 but its only 12 because 12 has 1st occurence</p>
+      <h2 class="heading">Arrow functions</h2>
+      <div class="post">
+          <h2 class="subtitle">What are Arrow Functions</h2>
+          <p>Arrow functions – also called “fat arrow” functions, from CoffeeScript (a transcompiled language) — are a more concise syntax for writing function expressions. They utilize a new token, =>, that looks like a fat arrow. Arrow functions are anonymous and change the way this binds in functions.
+
+            Arrow functions make our code more concise, and simplify function scoping and the this keyword. They are one-line mini functions which work much like Lambdas in other languages like C# or Python. (See also lambdas in JavaScript). By using arrow functions, we avoid having to type the function keyword, return keyword (it’s implicit in arrow functions), and curly brackets.</p>
+          <h2 class="subtitle">Example</h2>
+          <pre class="examplecode">const multiplyES6 = (x, y) => { return x * y };
+            console.log(multiplyES6(7, 7));</pre>
+            <h2 class="subtitle">OutPut</h2>
+            <pre class="example">49</pre>
+            <hr>
+            <h2 class="subtitle">Example 2 Single Parameter</h2>
+            <pre class="examplecode">const phraseSplitterEs6 = phrase => phrase.split(" ");
+                console.log(phraseSplitterEs6("ES6 Awesomeness"));</pre>
+            <h2 class="subtitle">OutPut</h2>
+            <pre class="example">["ES6", "Awesomeness"]</pre>
+            <hr>
+            <h2 class="subtitle">Example 3 No Parameter</h2>
+            <pre class="examplecode">const docLogEs6 = () => { console.log("hello"); }; 
+                docLogEs6();</pre>
+            <h2 class="subtitile">OutPut</h2>
+            <pre class="example">"hello"</pre>
         </div>
-        <div class="post">
-            <h2 class="subtitle">FindIndex Method</h2>
-            <pre class="examplecode">const array1 =  [5, 12, 8, 130, 44];
-                const found = array1.findIndex(element => element==12);
-                console.log(found);
-            </pre>
-            <pre class="example">1</pre>
-            <p>This will return index of 1st occurence of the number</p>
-        </div>
-        <div class="post">
-            <h2 class="subtitle">Filter() Method</h2>
-            <p>The filter method creates a new array according to the condition or fucntion provided by the programmer</p>
-            <pre class="examplecode">const words = ['spray','limit', 'elite', 'exuberant', 'destruction', 'present'];
-                let result = words.filter(word => word.length > 6);
-                console.log(result);</pre>
-            <h2 class="subtitle">Output</h2>
-            <pre class="example">["exuberant", "destruction", "present"]</pre>
-        </div>
+
+
 
 </article>
 </div>
 <div class="col-sm-3">
-    <aside>
-        <nav class="asidenav">
-            <ul>
-              <br>
-                <h1>Navigation</h1>  
-                <li><a href="index.html">Home</a></li>
-                <li><a href="javapractice.html">ES6 Tutorial</a></li>
-                <li><a href="mapmethods.html">Map methods</a></li>
-                <li><a href="FindandFilter.html">Find and Filter Methods</a></li>
-                <li><a href="ArrowFunctions.html">Arrow Functions</a></li>
-            </ul>
-          </nav>
-    </aside>
+  <aside>
+    <nav class="asidenav">
+        <ul>
+          <br>
+            <h1>Navigation</h1>  
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javapractice.html">ES6 Tutorial</a></li>
+            <li><a href="mapmethods.html">Map methods</a></li>
+            <li><a href="FindandFilter.html">Find and Filter Methods</a></li>
+            <li><a href="ArrowFunctions.html">Arrow Functions</a></li>
+        </ul>
+      </nav>
+</aside>
   </div>
   </div>
 </div>
@@ -79,7 +75,7 @@
             <h1>&nbsp&nbspNavigation</h1>
     <nav class = "footernav" >
         <ul>
-            <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
             <li><a href="javapractice.html">ES6 Tutorial</a></li>
             <li><a href="mapmethods.html">Map methods</a></li>
             <li><a href="FindandFilter.html">Find and Filter Methods</a></li>
